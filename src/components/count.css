@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.card-body {
+    width: 350px;
+    margin: 50px;
+}

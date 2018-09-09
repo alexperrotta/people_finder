@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/header';
 import PersonList from './components/personList';
+import Count from './components/count';
 require('dotenv').config();
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route path="/personList" component={PersonList} />
+          <Route path="/count" component={Count} />
         </Switch>
       </div>
     );

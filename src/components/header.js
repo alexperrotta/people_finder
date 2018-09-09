@@ -17,7 +17,7 @@ class Header extends Component {
                                 <Link to="/personList" className="nav-link">Person List</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-link">Unique Char Count</Link>
+                                <Link to="/count" className="nav-link">Unique Char Count</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/" className="nav-link">Duplicates</Link>

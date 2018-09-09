@@ -20,7 +20,7 @@ class Header extends Component {
                                 <Link to="/count" className="nav-link">Unique Char Count</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/" className="nav-link">Duplicates</Link>
+                                <Link to="/duplicate" className="nav-link">Duplicates</Link>
                             </li>
                         </ul>
                         </div>

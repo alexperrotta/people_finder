@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/header';
 import PersonList from './components/personList';
 import Count from './components/count';
+import Duplicate from './components/duplicate';
 require('dotenv').config();
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path="/personList" component={PersonList} />
           <Route path="/count" component={Count} />
+          <Route path="/duplicate" component={Duplicate} />
         </Switch>
       </div>
     );

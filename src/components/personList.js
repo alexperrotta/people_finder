@@ -30,17 +30,19 @@ class PersonList extends Component {
 
 	render() {
 		return (
-            <div className="card border-secondary mb-3">
-                {this.state.people.map(person => (
-					<div className="card-header" key={person.id}>
-						<p className="card-text">{person.first_name} {person.last_name}</p>
-						<div className="card-body text-secondary">
-							<p className="card-text">{person.email_address}</p>
-							<p className="card-text">{person.title}</p>
+            <div className='container'>
+				<div className="card border-secondary mb-3">
+					{this.state.people.map(person => (
+						<div className="card-header" key={person.id}>
+							<p className="card-text">{person.first_name} {person.last_name}</p>
+							<div className="card-body text-secondary">
+								<p className="card-text">{person.email_address}</p>
+								<p className="card-text">{person.title}</p>
+							</div>
 						</div>
-					</div>
-				))}
-            </div>
+					))}
+				</div>
+			</div>
 		)
 	}
 }

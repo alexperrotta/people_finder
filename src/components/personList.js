@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import "./personList.css";
 
 const config = {
     headers : {
 		'Access-Control-Allow-Origin': '*',
-		Authorization: `${process.env.SL_KEY}`
+		Authorization: `${process.env.REACT_APP_SL_KEY}`
 	}
 };
 

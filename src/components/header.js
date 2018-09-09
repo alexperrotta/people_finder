@@ -13,15 +13,15 @@ class Header extends Component {
                         <div>
 
                         <ul className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">Person List</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">Unique Char Count</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">Duplicates</Link>
-                        </li>
+                            <li className="nav-item">
+                                <Link to="/personList" className="nav-link">Person List</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/" className="nav-link">Unique Char Count</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/" className="nav-link">Duplicates</Link>
+                            </li>
                         </ul>
                         </div>
 

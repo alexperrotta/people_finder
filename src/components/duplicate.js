@@ -14,23 +14,39 @@ class Duplicate extends Component {
         super();
         this.state = {
             people: [],
+            dupeEmail: []
         }
     }
 
 	componentDidMount() {
 		axios.get('https://api.salesloft.com/v2/people.json', config)
 		.then(res => {
-			this.setState({
-				people: res.data.data
-			});
-		})
+            const emails = [];
+            const people = res.data.data;
+            people.map((person) => {
+                if (person.email) {
+                    emails.push(person.email);
+            }
+        });
+        emails.forEach((email) => { 
+            let email1 = '';
+            let email2 = '';
+            let dupeEmail = '';
+            // compare the length of the first email to the second email
+            // if they are the same length, it may be a duplicate
+            if (email1.length === email2.length) {
+                dupeEmail.push(email);
+            }
+        });
+    });
 	}
 		
 
 	render() {
 		return (
             <div className='container'>
-				<p>List of email address that may be duplicates: </p>
+            {/* render the list of duplicate people here */}
+				<p>List of possible duplicate people: </p>
 			</div>
 		)
 	}

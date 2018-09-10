@@ -21,6 +21,7 @@ class Duplicate extends Component {
 	componentDidMount() {
 		axios.get('https://api.salesloft.com/v2/people.json', config)
 		.then(res => {
+            // retrieving the email addresses from each person in order to iterate through them
             const emails = [];
             const people = res.data.data;
             people.map((person) => {
@@ -28,6 +29,7 @@ class Duplicate extends Component {
                     emails.push(person.email);
             }
         });
+        // Try to find possible duplicate email addresses by comparing them
         emails.forEach((email) => { 
             let email1 = '';
             let email2 = '';

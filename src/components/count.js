@@ -53,7 +53,8 @@ class Count extends Component {
 		return (
             <div className='container'>
 				<div className="card-body text-secondary">
-					<p className="card-text">Character: {this.state.charMap}</p>
+					<h5>Count of all the unique characters in all the email addresses of all the People</h5>
+                    <p className="card-text">Character: {this.state.charMap}</p>
                     <p className="card-text">Count: </p>
 				</div>
 			</div>

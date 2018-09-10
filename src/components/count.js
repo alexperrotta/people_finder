@@ -22,6 +22,7 @@ class Count extends Component {
 	componentDidMount() {
 		axios.get('https://api.salesloft.com/v2/people.json', config)
 		.then(res => {
+            // retrieving the email addresses from each person in order to iterate through them
             const emails = [];
             const people = res.data.data;
             people.map((person) => {
@@ -33,7 +34,8 @@ class Count extends Component {
             // iterate through the email string and add each character to charMap
             let charMap = {};
             for (let char of email) {
-                // add character to charMap, if the character already exists add 1
+                // add character to charMap
+                // if the character already exists add 1 to the count
                 if (charMap[char]) {
                     charMap[char]++;
                 } else {

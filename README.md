@@ -5,9 +5,11 @@ SalesLoft Offline Evaluation
 
 ## Built With
 
+* JavaScript
 * React
 * React Router
 * Axios
+* React-Bootstrap
 
 ## Instructions - 3 Levels
 
@@ -32,14 +34,16 @@ Using Postman, I was able to see what the data looks like and make sure the auth
 
 * Level 1  - Figuring out the right code for the authentication was a bit of a challenge. I was able to get a snippet of what the code might look like from Postman. I ran into a CORS issue and installed a Chrome extension that solved it for me. I don't believe this is the best solution and would like to investigate the best way to address that.
 
+![People List](/public/people_list.png "People List")
+
 * Level 2 - After coding the function that outputs the frequency count of characters in each email address, I'm struggling with how to render that to the screen.
 
 * Level 3 - I researched a few different approaches on how to handle fuzzy matching two strings. For now I coded comparing the lengths of two strings. I came across an npm package called 'string-similarity' that might work.
 
 ## Improvements
 
-* Refactor the code to make sure there's no repeating code.
-* Render the data from levels 2 and 3.
+* Refactor the code to make sure it's DRY.
+* Render the data from levels 2 and 3 to the front end.
 * Identify if each function is performant in case the data from the api gets larger.
 * Add a loading spinner in case the data takes a few seconds to render to the screen.
 
